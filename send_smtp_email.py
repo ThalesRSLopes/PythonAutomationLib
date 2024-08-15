@@ -24,5 +24,6 @@ class SendSmtpEmail:
             smtpSender.sendmail(self.email_sender, email_receiver, em.as_string())
 
 
-mail_sender = SendSmtpEmail("thalesrslopes@gmail.com","thalesrslopesgmail")
-mail_sender.send_email("thalesrslopes@gmail.com","e-mail teste", "Testando o envio de e-mails com Python")
+if __name__ == "__main__":
+    mail_sender = SendSmtpEmail("thalesrslopes@gmail.com", "thalesrslopesgmail")
+    mail_sender.send_email("thalesrslopes@gmail.com", "e-mail teste", "Testando o envio de e-mails com Python")
